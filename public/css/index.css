@@ -1,0 +1,59 @@
+@font-face {
+    font-family: MadeInChina;
+    src: url('../fonts/made-in-china.TTF');
+}
+
+
+* {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+h1 {
+  font-family: 'MadeInChina';
+  display: inline-block;
+  font-size: 150px;
+  color: white;
+  font-weight: 400;
+  vertical-align: top;
+  margin-top: 100px;
+}
+
+img { max-width: 100%; }
+
+body {
+  background-color: #c7ebff;
+}
+
+.sky {
+  z-index: 0;
+  position: fixed;
+}
+
+.main-content {
+  padding-top: 120px;
+  position: relative;
+  z-index: 100;
+  background-image: url('../assets/background_village_small-01.png');
+  background-position: bottom;
+  background-repeat: repeat-x;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.cloud1 { width: 220px; }
+.cloud2 { width: 150px; }
+
+.title {
+  width: 100%;
+  text-align: center;
+  background-image: url('../assets/brushstroke-03.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon--google-play img {
+  width: 300px;
+}
