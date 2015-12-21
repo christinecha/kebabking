@@ -54,8 +54,12 @@ body {
   background-size: contain;
 }
 
-.icon--google-play img {
+.icon-android img,
+.icon-ios img {
   width: 300px;
+}
+
+.coming-soon {
 }
 
 #mailing-list {

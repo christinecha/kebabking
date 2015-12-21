@@ -59,6 +59,10 @@ $(document).ready(function(){
       addedAt: Firebase.ServerValue.TIMESTAMP,
     });
     $('.confirmation').text('You\'ve been added to the list :)');
+
+    setTimeout(function() {
+      $('#mailing-list').hide();
+    }, 3000);
     return false;
   });
 });
