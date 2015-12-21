@@ -58,7 +58,7 @@ body {
   width: 300px;
 }
 
-.mailing-list {
+#mailing-list {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -66,12 +66,12 @@ body {
   padding: 50px 0;
 }
 
-.mailing-list h2 {
+#mailing-list h2 {
   font-weight: 400;
   color: white;
 }
 
-.mailing-list input[type="email"] {
+#mailing-list input[type="email"] {
   border: none;
   padding: 20px;
   font-size: 18px;
@@ -80,13 +80,13 @@ body {
   width: 300px;
 }
 
-.mailing-list input[type="email"]:focus {
+#mailing-list input[type="email"]:focus {
   outline: 2px solid white;
   border-radius: 10px;
   outline-offset: 5px;
 }
 
-.mailing-list button {
+#mailing-list button {
   margin-left: 10px;
   border: none;
   padding: 20px;
@@ -97,8 +97,16 @@ body {
   font-family: 'MadeInChina';
   opacity: .8;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
-.mailing-list button:hover {
+#mailing-list button:hover {
   opacity: 1;
+}
+
+#mailing-list .confirmation {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+  height: 20px;
 }

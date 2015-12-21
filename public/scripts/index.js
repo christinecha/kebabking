@@ -1,3 +1,5 @@
+var ref = new Firebase("https://kebabking.firebaseio.com/");
+
 //// Objects & Functions
 var sky = {};
 sky.autoHide = function(){
@@ -48,6 +50,17 @@ $(document).ready(function(){
   clouds.setInitialOffset();
   setInterval(clouds.moveRight, 30);;
 
+  $('#mailing-list').on('submit', function(e) {
+    console.log('hi')
+    e.preventDefault;
+    var email = $('#email').val();
+    ref.child('mailing-list').push({
+      email: email,
+      addedAt: Firebase.ServerValue.TIMESTAMP,
+    });
+    $('.confirmation').text('You\'ve been added to the list :)');
+    return false;
+  });
 });
 
 
