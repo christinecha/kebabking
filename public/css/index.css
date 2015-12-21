@@ -54,9 +54,13 @@ body {
   background-size: contain;
 }
 
-.icon-android img,
-.icon-ios img {
+.icon-android,
+.icon-ios {
   width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .coming-soon {
@@ -94,7 +98,7 @@ body {
   margin-left: 10px;
   border: none;
   padding: 20px;
-  font-size: 34px;
+  font-size: 33px;
   border-radius: 10px;
   background-color: #29abe2;
   color: white;
@@ -114,3 +118,19 @@ body {
   color: white;
   height: 20px;
 }
+
+
+@media (max-width: 970px) {
+  .title img { width: 120px }
+  .title h1 { font-size: 100px; margin-top: 55px; }
+}
+
+@media (max-width: 500px) {
+  .title img { width: 50px }
+  .title h1 { font-size: 40px; margin-top: 25px; }
+  .icon-android img,
+  .icon-ios { width: 200px; display: block; margin: 10px auto; }
+  #mailing-list h2 { padding: 0 20px; }
+  #mailing-list { position: relative; }
+  #mailing-list input[type="email"] { font-size: 12px; max-width: 40%; }
+  #mailing-list button { width: 35%; font-size: 20px; margin-left: 5px; }
