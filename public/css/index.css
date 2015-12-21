@@ -32,13 +32,13 @@ body {
 }
 
 .main-content {
-  padding-top: 120px;
+  padding-top: 10vh;
   position: relative;
   z-index: 100;
   background-image: url('../assets/background_village_small-01.png');
   background-position: bottom;
   background-repeat: repeat-x;
-  min-height: 100vh;
+  min-height: 90vh;
   text-align: center;
 }
 
@@ -56,4 +56,49 @@ body {
 
 .icon--google-play img {
   width: 300px;
+}
+
+.mailing-list {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0,0,0,.8);
+  padding: 50px 0;
+}
+
+.mailing-list h2 {
+  font-weight: 400;
+  color: white;
+}
+
+.mailing-list input[type="email"] {
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,.8);
+  width: 300px;
+}
+
+.mailing-list input[type="email"]:focus {
+  outline: 2px solid white;
+  border-radius: 10px;
+  outline-offset: 5px;
+}
+
+.mailing-list button {
+  margin-left: 10px;
+  border: none;
+  padding: 20px;
+  font-size: 34px;
+  border-radius: 10px;
+  background-color: #29abe2;
+  color: white;
+  font-family: 'MadeInChina';
+  opacity: .8;
+  cursor: pointer;
+}
+
+.mailing-list button:hover {
+  opacity: 1;
 }
